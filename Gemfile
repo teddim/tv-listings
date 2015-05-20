@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'student_challenges_formatter', git: "git@github.com:gSchool/student-challenges-formatter-gem.git", branch: "rails-formatter"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
@@ -43,4 +44,3 @@ group :development, :test do
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
 end
-

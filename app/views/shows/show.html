@@ -1,0 +1,16 @@
+
+  <%= flash[:notice] %>
+  <br>
+<% if @show_listings.length == 0 %>
+  <%= "No Show Listings for #{@show.name}" %>
+<% end %>
+<br>
+<%= link_to "Edit", edit_show_path(@show) %>
+<br>
+<%= link_to "New Show Listing", new_show_listing_path %>
+<br>
+<% @show_listings.each do |show| %>
+<%= "#{show.show.name} is showing on #{show.channel.name} on #{show.date.strftime("%m/%d/%Y")}"
+ %>
+ <br>
+ <% end %>

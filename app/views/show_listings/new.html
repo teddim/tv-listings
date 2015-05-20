@@ -1,0 +1,8 @@
+New
+<%= form_for @show_listing do |f| %>
+<%= f.collection_select :channel_id, Channel.all, :id, :name, { :prompt=> "Channels"} , {id: "Channels"}%>
+<%= f.collection_select :show_id, Show.all, :id, :name, { :prompt=> "Shows"} , {id: "Shows"}%>
+<%= f.label :date %>
+<%= f.date_field :date %>
+<%= f.submit "Create Show Listing"%>
+<% end %>

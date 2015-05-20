@@ -1,0 +1,8 @@
+<%= @channel.name %>
+<%= form_for @channel do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.submit "Save New Channel"%>
+
+  <% end %>
